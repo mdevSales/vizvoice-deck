@@ -453,29 +453,52 @@
         }
         .solution-title strong { font-weight: 800; color: var(--sf-cloud-68); }
         .arch-diagram {
-            margin-top: 40px;
-            padding: 48px 32px;
-            background: var(--surface-elev);
+            margin-top: 32px;
+            padding: 56px 40px 40px;
+            background: linear-gradient(180deg, rgba(0, 179, 255, 0.06) 0%, rgba(0, 179, 255, 0.02) 100%);
             border: 1px solid var(--line-soft);
             border-radius: var(--radius-lg);
         }
-        .arch-diagram svg { width: 100%; height: 380px; display: block; }
-        .arch-node rect { fill: rgba(0, 179, 255, 0.12); stroke: var(--sf-cloud-68); stroke-width: 1.5; rx: 10; }
-        .arch-node.hub rect { fill: rgba(0, 179, 255, 0.28); stroke-width: 2.5; }
-        .arch-node text {
-            font-family: var(--font-display);
-            font-weight: 600;
-            fill: var(--text-primary);
-            font-size: 18px;
+        .arch-diagram svg { width: 100%; height: 480px; display: block; }
+        .arch-step rect { rx: 18; }
+        .arch-step .box-fill { fill: rgba(0, 179, 255, 0.10); stroke: var(--sf-cloud-68); stroke-width: 2; }
+        .arch-step.data .box-fill { fill: rgba(252, 192, 3, 0.10); stroke: var(--sf-yellow-80); stroke-width: 2; }
+        .arch-step.hub .box-fill { fill: rgba(0, 179, 255, 0.22); stroke: var(--sf-cloud-68); stroke-width: 3; }
+        .arch-step .step-num-text {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            letter-spacing: 0.28em;
+            fill: var(--sf-cloud-68);
+            font-weight: 500;
         }
-        .arch-edge { stroke: var(--sf-cloud-68); stroke-width: 1.5; fill: none; }
-        .arch-edge-label {
+        .arch-step.data .step-num-text { fill: var(--sf-yellow-80); }
+        .arch-step .step-label {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 22px;
+            fill: #fff;
+            letter-spacing: -0.01em;
+        }
+        .arch-step .step-tech {
             font-family: var(--font-mono);
             font-size: 12px;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.14em;
+            fill: #a8c5f5;
             text-transform: uppercase;
-            fill: var(--text-secondary);
         }
+        .arch-flow { stroke: var(--sf-cloud-68); stroke-width: 2.5; fill: none; }
+        .arch-flow.up { stroke: var(--sf-yellow-80); }
+        .arch-flow.loop { stroke-dasharray: 6 8; opacity: 0.55; stroke-width: 2; }
+        .arch-flow-label {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            fill: var(--sf-cloud-68);
+            font-weight: 500;
+        }
+        .arch-flow-label.up { fill: var(--sf-yellow-80); }
+        .arch-flow-label.loop { fill: var(--text-muted); }
 
         /* ===========================================
            SEMANTIC MODEL (DMO) SLIDE
@@ -1082,62 +1105,98 @@
                         <h2 class="solution-title">Ask the dashboard <strong>out loud.</strong><br>Hear the answer back.</h2>
                     </div>
                     <div class="arch-diagram reveal">
-                        <svg viewBox="0 0 1700 380" xmlns="http://www.w3.org/2000/svg" aria-label="VizVoice architecture: user speaks, Web Speech API transcribes, Agentforce Agent queries the Data 360 semantic model, browser TTS speaks answer back">
-                            <!-- edges (drawn first, under nodes) -->
-                            <path class="arch-edge" d="M 190 140 L 320 140" marker-end="url(#arrow)"/>
-                            <path class="arch-edge" d="M 540 140 L 690 140" marker-end="url(#arrow)"/>
-                            <path class="arch-edge" d="M 910 140 L 1060 140" marker-end="url(#arrow)"/>
-                            <path class="arch-edge" d="M 1090 120 Q 1200 60 1310 100" marker-end="url(#arrow)"/>
-                            <path class="arch-edge" d="M 1310 160 Q 1200 200 1090 160" marker-end="url(#arrow)"/>
-                            <path class="arch-edge" d="M 1090 200 Q 1200 260 1310 300" marker-end="url(#arrow)"/>
-                            <path class="arch-edge" d="M 1490 300 L 1590 240" marker-end="url(#arrow)"/>
-                            <path class="arch-edge" d="M 1600 200 Q 800 340 100 200" marker-end="url(#arrow)" stroke-dasharray="6 6" opacity="0.55"/>
-
+                        <svg viewBox="0 0 1720 500" xmlns="http://www.w3.org/2000/svg" aria-label="VizVoice architecture: user speaks, Web Speech transcribes in-browser, Agentforce reasons against the Data 360 semantic model, browser speaks the answer back">
                             <defs>
-                                <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#00B3FF"/>
+                                <marker id="a-blue" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                                    <path d="M 0 0 L 12 6 L 0 12 z" fill="#00B3FF"/>
+                                </marker>
+                                <marker id="a-yellow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                                    <path d="M 0 0 L 12 6 L 0 12 z" fill="#FCC003"/>
+                                </marker>
+                                <marker id="a-muted" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                                    <path d="M 0 0 L 12 6 L 0 12 z" fill="#5b7ba8"/>
                                 </marker>
                             </defs>
 
-                            <!-- edge labels -->
-                            <text class="arch-edge-label" x="255" y="128">Voice</text>
-                            <text class="arch-edge-label" x="615" y="128">Text</text>
-                            <text class="arch-edge-label" x="985" y="128">Query</text>
-                            <text class="arch-edge-label" x="1200" y="72">Ask</text>
-                            <text class="arch-edge-label" x="1200" y="196">Data</text>
-                            <text class="arch-edge-label" x="1200" y="290">Answer</text>
-                            <text class="arch-edge-label" x="800" y="290">Spoken back</text>
+                            <!-- zone labels -->
+                            <text x="200" y="60" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.28em; fill: #5b7ba8;">CLIENT · BROWSER</text>
+                            <text x="960" y="60" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.28em; fill: #00B3FF;">SALESFORCE PLATFORM</text>
+                            <text x="1570" y="60" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.28em; fill: #5b7ba8;">CLIENT · BROWSER</text>
 
-                            <!-- nodes -->
-                            <g class="arch-node">
-                                <rect x="30" y="100" width="160" height="80"/>
-                                <text x="110" y="146" text-anchor="middle">User speaks</text>
+                            <!-- soft zone dividers -->
+                            <line x1="410" y1="90" x2="410" y2="430" stroke="rgba(0,179,255,0.18)" stroke-width="1" stroke-dasharray="2 8"/>
+                            <line x1="1470" y1="90" x2="1470" y2="430" stroke="rgba(0,179,255,0.18)" stroke-width="1" stroke-dasharray="2 8"/>
+
+                            <!-- forward flow: 01 → 02 → 03 -->
+                            <path d="M 320 285 L 475 285" stroke="#00B3FF" stroke-width="3" fill="none" marker-end="url(#a-blue)"/>
+                            <path d="M 770 285 L 895 285" stroke="#00B3FF" stroke-width="3" fill="none" marker-end="url(#a-blue)"/>
+
+                            <!-- Data 360 loop (up-out and down-in) — yellow branch -->
+                            <path d="M 1050 235 C 1090 160 1180 130 1240 130" stroke="#FCC003" stroke-width="3" fill="none" marker-end="url(#a-yellow)"/>
+                            <path d="M 1240 190 C 1180 210 1090 230 1050 260" stroke="#FCC003" stroke-width="3" fill="none" marker-end="url(#a-yellow)"/>
+
+                            <!-- forward flow: 03 → 04 → 05 -->
+                            <path d="M 1115 305 L 1245 305" stroke="#00B3FF" stroke-width="3" fill="none" marker-end="url(#a-blue)"/>
+                            <path d="M 1495 305 L 1610 305" stroke="#00B3FF" stroke-width="3" fill="none" marker-end="url(#a-blue)"/>
+
+                            <!-- Conversation loop -->
+                            <path d="M 1650 355 C 1650 460 1000 480 200 460 C 130 455 130 400 130 380 L 130 355" stroke="#5b7ba8" stroke-width="2" stroke-dasharray="6 8" fill="none" opacity="0.6" marker-end="url(#a-muted)"/>
+
+                            <!-- flow labels -->
+                            <text x="397" y="272" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; fill: #00B3FF; text-transform: uppercase; font-weight: 500;">VOICE</text>
+                            <text x="832" y="272" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; fill: #00B3FF; text-transform: uppercase; font-weight: 500;">TEXT</text>
+                            <text x="1120" y="175" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; fill: #FCC003; text-transform: uppercase; font-weight: 500;">QUERY</text>
+                            <text x="1120" y="248" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; fill: #FCC003; text-transform: uppercase; font-weight: 500;">DATA</text>
+                            <text x="1180" y="292" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; fill: #00B3FF; text-transform: uppercase; font-weight: 500;">ANSWER</text>
+                            <text x="1553" y="292" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; fill: #00B3FF; text-transform: uppercase; font-weight: 500;">SPOKEN</text>
+                            <text x="880" y="475" text-anchor="middle" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.22em; fill: #5b7ba8; text-transform: uppercase;">CONVERSATION CONTINUES · PROACTIVE FOLLOW-UP</text>
+
+                            <!-- STEP 1 — User speaks -->
+                            <g class="arch-step">
+                                <rect class="box-fill" x="80" y="240" width="240" height="90"/>
+                                <text class="step-num-text" x="102" y="272">01</text>
+                                <text class="step-label" x="102" y="302">User speaks</text>
+                                <text class="step-tech" x="102" y="322">Alt + V · Option + V</text>
                             </g>
-                            <g class="arch-node">
-                                <rect x="320" y="100" width="220" height="80"/>
-                                <text x="430" y="140" text-anchor="middle">Web Speech</text>
-                                <text x="430" y="164" text-anchor="middle" font-size="13" fill="#a8c5f5">browser-native STT</text>
+
+                            <!-- STEP 2 — Browser transcribes -->
+                            <g class="arch-step">
+                                <rect class="box-fill" x="475" y="240" width="295" height="90"/>
+                                <text class="step-num-text" x="497" y="272">02</text>
+                                <text class="step-label" x="497" y="302">Browser transcribes</text>
+                                <text class="step-tech" x="497" y="322">Web Speech API · no cloud STT</text>
                             </g>
-                            <g class="arch-node">
-                                <rect x="690" y="100" width="220" height="80"/>
-                                <text x="800" y="146" text-anchor="middle">Browser transcribes</text>
+
+                            <!-- STEP 3 — Agentforce hub -->
+                            <g class="arch-step hub">
+                                <rect class="box-fill" x="895" y="220" width="220" height="140"/>
+                                <text class="step-num-text" x="917" y="252">03</text>
+                                <text class="step-label" x="917" y="286">Agentforce</text>
+                                <text class="step-label" x="917" y="312" style="font-size: 20px;">Agent reasons</text>
+                                <text class="step-tech" x="917" y="336">a11y system prompt</text>
                             </g>
-                            <g class="arch-node hub">
-                                <rect x="1060" y="100" width="240" height="100"/>
-                                <text x="1180" y="140" text-anchor="middle">Agentforce Agent</text>
-                                <text x="1180" y="168" text-anchor="middle" font-size="13" fill="#a8c5f5">accessibility system prompt</text>
+
+                            <!-- Data 360 — above hub, yellow -->
+                            <g class="arch-step data">
+                                <rect class="box-fill" x="1240" y="120" width="310" height="90"/>
+                                <text class="step-num-text" x="1262" y="152">DATA 360</text>
+                                <text class="step-label" x="1262" y="182">Semantic Model</text>
+                                <text class="step-tech" x="1262" y="202">DMOs · one source of truth</text>
                             </g>
-                            <g class="arch-node">
-                                <rect x="1310" y="60" width="360" height="80"/>
-                                <text x="1490" y="106" text-anchor="middle">Data 360 Semantic Model</text>
+
+                            <!-- STEP 4 — Browser speaks -->
+                            <g class="arch-step">
+                                <rect class="box-fill" x="1245" y="260" width="250" height="90"/>
+                                <text class="step-num-text" x="1267" y="292">04</text>
+                                <text class="step-label" x="1267" y="322">Browser speaks</text>
+                                <text class="step-tech" x="1267" y="342">Web Speech TTS · no cloud</text>
                             </g>
-                            <g class="arch-node">
-                                <rect x="1310" y="260" width="180" height="80"/>
-                                <text x="1400" y="306" text-anchor="middle">Browser TTS</text>
-                            </g>
-                            <g class="arch-node">
-                                <rect x="1560" y="200" width="120" height="80"/>
-                                <text x="1620" y="246" text-anchor="middle">User hears</text>
+
+                            <!-- STEP 5 — User hears -->
+                            <g class="arch-step">
+                                <rect class="box-fill" x="1610" y="260" width="105" height="90"/>
+                                <text class="step-num-text" x="1632" y="292">05</text>
+                                <text class="step-label" x="1632" y="322" style="font-size: 18px;">User hears</text>
                             </g>
                         </svg>
                     </div>
