@@ -1646,20 +1646,10 @@
                     localStorage.setItem('vizvoice-deck-content', JSON.stringify(data));
                 } catch (_) {}
             }
-            restore() {
-                try {
-                    const raw = localStorage.getItem('vizvoice-deck-content');
-                    if (!raw) return;
-                    const data = JSON.parse(raw);
-                    const editables = document.querySelectorAll(this.editableSelectors.join(','));
-                    editables.forEach((el, i) => {
-                        const saved = data['n' + i];
-                        if (typeof saved === 'string') el.innerHTML = saved;
-                    });
-                } catch (_) {}
-            }
+            restore() { /* disabled: HTML is the source of truth */ }
         }
 
+        try { localStorage.removeItem('vizvoice-deck-content'); } catch (_) {}
         const deck = new SlidePresentation();
         window.__editor = new InlineEditor(deck);
     </script>
