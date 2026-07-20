@@ -1,0 +1,47 @@
+1
+00:00:00,000 --> 00:00:07,259
+Two hundred and fifty-three million people live with vision loss — and every dashboard we build our decisions from is invisible to them.
+
+2
+00:00:07,670 --> 00:00:15,238
+The chart was never the point. The insight was. VizVoice starts from that idea and rebuilds analytics around it.
+
+3
+00:00:15,655 --> 00:00:24,300
+Traditional Tableau dashboards render as unlabeled SVG. To a screen reader, they are silent — a wall of shapes with no data behind them.
+
+4
+00:00:24,713 --> 00:00:33,838
+Two hundred and fifty-three million people with vision impairment have zero independent access to these insights. That is the size of the gap we are closing.
+
+5
+00:00:34,250 --> 00:00:41,573
+Every accessibility fix in the industry today assumes the goal is reading the chart. We think that assumption is the bug.
+
+6
+00:00:41,985 --> 00:00:47,025
+What if you did not need to see the chart at all? What if the dashboard just answered you?
+
+7
+00:00:47,441 --> 00:00:56,710
+Ask the dashboard out loud. Hear the answer back. That is VizVoice — a voice-first agent built on Data 360 and Agentforce.
+
+8
+00:00:57,123 --> 00:01:13,086
+The agent reasons over the same Data 360 semantic model that renders every chart in the org. No RAG, no custom index, no drift between what a sighted user sees and what a blind user hears — one definition, honored by both.
+
+9
+00:01:13,492 --> 00:01:29,247
+Here is a real exchange with the agent. You ask which line had the most cancellations. Route twelve, two hundred and fifty canceled trips. You ask about the Green Line in December. Thirty-seven. Every answer grounded in the live semantic model.
+
+10
+00:01:29,657 --> 00:01:45,550
+We did not just make VizVoice compliant. We trained the analytics agent with strict accessibility rules in its system prompt. We ran the accessibility expert skill against every component. And we redesigned the entire interaction around voice.
+
+11
+00:01:45,969 --> 00:01:56,535
+Accessibility is not a fallback. It is a better default. Voice removes barriers, and it speeds insight for every user in the org — not only the ones we built it for.
+
+12
+00:01:56,950 --> 00:02:14,438
+Built entirely on the Salesforce platform. No external AI services. VizVoice proves voice-first design can make analytics universally accessible — a solved problem waiting to scale. By Leandria Streeter, Mahathi Devulapalli, and Russell Evans.

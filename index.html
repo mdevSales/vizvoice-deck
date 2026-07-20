@@ -578,9 +578,27 @@
         .demo .slide-inner { justify-content: center; }
         .demo-header {
             display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 72px;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 20px 32px;
+            margin-bottom: 40px;
+        }
+        .demo-caption {
+            flex-basis: 100%;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            max-width: 1500px;
+            margin-top: 12px;
+        }
+        .demo-caption em {
+            font-family: var(--font-poetic);
+            font-style: italic;
+            font-weight: 500;
+            color: var(--sf-cloud-68);
         }
         .live-dot {
             width: 12px;
@@ -613,7 +631,7 @@
         }
         .demo-video-frame video {
             width: 100%;
-            height: 760px;
+            height: 700px;
             display: block;
             object-fit: contain;
             background: var(--sf-electric-15);
@@ -1340,6 +1358,7 @@
                     <div class="demo-header reveal">
                         <div class="live-dot"></div>
                         <div class="eyebrow">Live · Chicago Transit Data</div>
+                        <div class="demo-caption">Ask a dashboard out loud. Hear an answer back — <em>grounded in the same numbers on screen.</em></div>
                     </div>
                     <div class="demo-video-frame reveal">
                         <video src="assets/vizvoice-demo.mp4"
@@ -1358,39 +1377,39 @@
                 <div class="grain"></div>
                 <div class="slide-inner">
                     <div class="reveal">
-                        <div class="eyebrow">We didn't just make it compliant</div>
-                        <h2 class="built-title">We redesigned the interaction<br>for <em>accessibility.</em></h2>
+                        <div class="eyebrow">What you just heard took</div>
+                        <h2 class="built-title">Three deliberate <em>layers</em><br>of design.</h2>
                     </div>
                     <div class="built-grid three">
                         <div class="built-item reveal">
                             <div class="built-icon"><svg><use href="#icon-agent"/></svg></div>
                             <div class="built-copy">
-                                <div class="built-label">Layer 01 · Agent</div>
-                                <div class="built-value">Trained the analytics agent</div>
-                                <div class="built-desc">Strict accessibility rules baked into the system prompt: numbers first, no visual language, always offer a follow-up.</div>
+                                <div class="built-label">Layer 01 · The Agent</div>
+                                <div class="built-value">Speaks like a briefing, not a chart.</div>
+                                <div class="built-desc">System prompt trained for accessibility first — numbers before adjectives, no color or shape references, every answer ends with a follow-up.</div>
                             </div>
                         </div>
                         <div class="built-item reveal">
                             <div class="built-icon"><svg><use href="#icon-code"/></svg></div>
                             <div class="built-copy">
-                                <div class="built-label">Layer 02 · Interface</div>
-                                <div class="built-value">Ran the accessibility<br>expert skill on every component</div>
-                                <div class="built-desc">WCAG 2.1 AA on every React component. Keyboard-only path. Screen reader tested end-to-end.</div>
+                                <div class="built-label">Layer 02 · The Interface</div>
+                                <div class="built-value">Keyboard-first, screen-reader complete.</div>
+                                <div class="built-desc">WCAG 2.1 AA on every React component. No mouse required. Tested end-to-end with the same screen readers our users rely on.</div>
                             </div>
                         </div>
                         <div class="built-item reveal">
                             <div class="built-icon"><svg><use href="#icon-voice"/></svg></div>
                             <div class="built-copy">
-                                <div class="built-label">Layer 03 · Voice</div>
-                                <div class="built-value">Browser-native Web Speech</div>
-                                <div class="built-desc">Zero cloud STT/TTS spend. Roughly half the compute per turn versus hosted speech pipelines.</div>
+                                <div class="built-label">Layer 03 · The Voice</div>
+                                <div class="built-value">Browser-native, zero cloud spend.</div>
+                                <div class="built-desc">Web Speech for STT and TTS. Roughly half the compute per turn versus hosted speech pipelines — accessibility that is also sustainable.</div>
                             </div>
                         </div>
                     </div>
                     <div class="pillars reveal">
-                        <span class="pillar"><span class="pillar-dot"></span>Trusted AI · grounded in the Data 360 semantic model</span>
-                        <span class="pillar"><span class="pillar-dot"></span>Accessible by default · WCAG 2.1 AA, screen reader tested</span>
-                        <span class="pillar"><span class="pillar-dot"></span>Sustainable · ~50% less compute per turn vs hosted speech</span>
+                        <span class="pillar"><span class="pillar-dot"></span>Grounded · one Tableau semantic model, two audiences</span>
+                        <span class="pillar"><span class="pillar-dot"></span>Accessible · WCAG 2.1 AA, screen-reader verified</span>
+                        <span class="pillar"><span class="pillar-dot"></span>Sustainable · ~50% less compute per turn</span>
                     </div>
                 </div>
             </section>
@@ -1413,15 +1432,15 @@
                     <div class="better-list">
                         <div class="better-item reveal">
                             <h3>Voice is <em>faster</em></h3>
-                            <p>Nobody wants to click through six filters to answer one question. Everyone wins.</p>
+                            <p>One question, one answer. No filter panel, no drill-down, no dashboard tour — for anyone.</p>
                         </div>
                         <div class="better-item reveal">
                             <h3>Keyboard is <em>universal</em></h3>
-                            <p>Screen reader users need it. Power users prefer it. Cold hands and a coffee mug demand it.</p>
+                            <p>Screen-reader users need it. Power users prefer it. Analysts on a plane with a trackpad appreciate it too.</p>
                         </div>
                         <div class="better-item reveal">
                             <h3>Numbers-first is <em>clearer</em></h3>
-                            <p>The prompt discipline that helps blind users also cuts the fluff for everyone else.</p>
+                            <p>The discipline that keeps a blind user oriented also cuts the fluff for every executive on a call.</p>
                         </div>
                     </div>
                 </div>

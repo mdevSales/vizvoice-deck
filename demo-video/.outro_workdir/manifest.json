@@ -1,0 +1,177 @@
+{
+  "webm": "/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.outro_workdir/video/page@5be27b179319d2914252a2a9c00f30b0.webm",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "engine": "say",
+  "voice": null,
+  "rate": null,
+  "theme": "dark",
+  "target_duration_s": 0,
+  "wow": "",
+  "trim_lead": 7.814544209,
+  "schedule": [
+    {
+      "start": 8.558300000061081e-05,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/05d5bcf0c4870afc.wav"
+    },
+    {
+      "start": 18.41955025,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/3e74de8d930dfa26.wav"
+    },
+    {
+      "start": 26.766431708,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/27101398eb4f2ccb.wav"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Slide 10 \u2014 three layers of work",
+      "narration": "We didn't just make VizVoice compliant. We redesigned the entire interaction for accessibility. Three layers of work went into this. We trained the analytics agent with strict accessibility rules in its system prompt. We ran the accessibility expert skill against every component.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 18.1067,
+      "start_offset": 7.000000000090267e-06,
+      "actions": [
+        "navigate: https://mdevsales.github.io/vizvoice-deck/",
+        "wait: 1",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "press: ArrowRight",
+        "wait: 4"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/",
+          "status": 200,
+          "type": "document",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/salesforce_horiz_white.svg",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/team/mahathi.png",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/abilityforce.svg",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/semantic-model.mp4",
+          "status": 206,
+          "type": "media",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/team/leandria.png",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/team/russell.png",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant:ital,wght@1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap",
+          "status": 200,
+          "type": "stylesheet",
+          "ms": 0.0
+        }
+      ],
+      "console": []
+    },
+    {
+      "title": "Slide 11 \u2014 a better default",
+      "narration": "Accessibility isn't a fallback. It's a better default. Voice interaction removes barriers and speeds insight for all users.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 8.032,
+      "start_offset": 18.41949675,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 3"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/cormorant/v24/H4cjBXOCl9bbnla_nHIq6qu_oqOcaThr.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        }
+      ],
+      "console": []
+    },
+    {
+      "title": "Slide 12 \u2014 waiting to scale",
+      "narration": "Built entirely on the Salesforce platform. No external AI services. VizVoice proves voice-first design can make analytics universally accessible \u2014 a solved problem waiting to scale. Built by Leandria Streeter, Mahathi Devulapalli, and Russell Evans.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 17.6533,
+      "start_offset": 26.766359875,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 5"
+      ],
+      "requests": [],
+      "console": []
+    }
+  ]
+}

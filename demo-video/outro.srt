@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:18,107
+We didn't just make VizVoice compliant. We redesigned the entire interaction for accessibility. Three layers of work went into this. We trained the analytics agent with strict accessibility rules in its system prompt. We ran the accessibility expert skill against every component.
+
+2
+00:00:18,420 --> 00:00:26,452
+Accessibility isn't a fallback. It's a better default. Voice interaction removes barriers and speeds insight for all users.
+
+3
+00:00:26,766 --> 00:00:44,420
+Built entirely on the Salesforce platform. No external AI services. VizVoice proves voice-first design can make analytics universally accessible — a solved problem waiting to scale. Built by Leandria Streeter, Mahathi Devulapalli, and Russell Evans.

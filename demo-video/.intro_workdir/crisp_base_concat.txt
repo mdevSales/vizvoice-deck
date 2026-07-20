@@ -1,0 +1,7 @@
+file '/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/crisp_segments/seg_000.mp4'
+file '/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/crisp_segments/seg_001.mp4'
+file '/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/crisp_segments/seg_002.mp4'
+file '/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/crisp_segments/seg_003.mp4'
+file '/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/crisp_segments/seg_004.mp4'
+file '/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/crisp_segments/seg_005.mp4'
+file '/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/crisp_segments/seg_006.mp4'

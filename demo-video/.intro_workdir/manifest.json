@@ -1,0 +1,265 @@
+{
+  "webm": "/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.intro_workdir/video/page@d876913b6597963a99145083d08bd3f7.webm",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "engine": "say",
+  "voice": null,
+  "rate": null,
+  "theme": "dark",
+  "target_duration_s": 0,
+  "wow": "",
+  "trim_lead": 4.709940250000001,
+  "schedule": [
+    {
+      "start": 0.00015924999999938905,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/a4c6677d49344c63.wav"
+    },
+    {
+      "start": 8.101923291,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/fcaeeeca4d6face8.wav"
+    },
+    {
+      "start": 15.810062749999998,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/4f24371daa304e03.wav"
+    },
+    {
+      "start": 22.443084833,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/2cdd086a936e0585.wav"
+    },
+    {
+      "start": 35.834489790999996,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/300971c7b64ecf7b.wav"
+    },
+    {
+      "start": 40.875350708,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/774e34a9207b6518.wav"
+    },
+    {
+      "start": 56.262348374999995,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/2ecfaedbffbcd0d7.wav"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Slide 1 \u2014 title",
+      "narration": "What if your analyst can't see your dashboard? Meet VizVoice \u2014 a voice-first analytics agent for blind and low-vision users.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 7.7813,
+      "start_offset": 1.2082999999663002e-05,
+      "actions": [
+        "navigate: https://mdevsales.github.io/vizvoice-deck/",
+        "wait: 3"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/",
+          "status": 200,
+          "type": "document",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/abilityforce.svg",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/team/russell.png",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/vizvoice-demo.mp4",
+          "status": 206,
+          "type": "media",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/team/mahathi.png",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/salesforce_horiz_white.svg",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/team/leandria.png",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/semantic-model.mp4",
+          "status": 206,
+          "type": "media",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant:ital,wght@1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap",
+          "status": 200,
+          "type": "stylesheet",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/cormorant/v24/H4cjBXOCl9bbnla_nHIq6qu_oqOcaThr.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        }
+      ],
+      "console": []
+    },
+    {
+      "title": "Slide 2 \u2014 the scene",
+      "narration": "Traditional Tableau dashboards render as unlabeled SVG graphics, making them completely invisible to screen readers.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 7.3973,
+      "start_offset": 8.101881582999999,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 2"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "Slide 3 \u2014 253M",
+      "narration": "Two hundred and fifty-three million people worldwide with vision impairment have zero access to these insights.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 6.3147,
+      "start_offset": 15.809922583,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 2"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "Slide 4 \u2014 the critique",
+      "narration": "Data visualizations fail multiple accessibility standards. Blind and low-vision users cannot consume chart data, navigate dashboards independently, or understand trends without sighted assistance.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 13.072,
+      "start_offset": 22.442913958,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 2"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "Slide 5 \u2014 the reframe",
+      "narration": "What if reading the chart was never the goal? What if the dashboard just answered you?",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 4.72,
+      "start_offset": 35.834359833,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 2"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "Slide 6 \u2014 the solution",
+      "narration": "VizVoice is a voice agent powered by Agentforce. Users ask questions about Tableau dashboards out loud, and receive spoken answers grounded in the same semantic model that renders every chart in the org. No chart reading required.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 15.0667,
+      "start_offset": 40.8752225,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 4"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "Slide 7 \u2014 the semantic model",
+      "narration": "No screenshot parsing. No vision model. The agent queries the underlying Tableau semantic model directly via the Tableau REST API \u2014 so the data a blind user hears is the same authoritative source a sighted user sees. Let me show you VizVoice in action.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 17.1947,
+      "start_offset": 56.262173458,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 4"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/semantic-model.mp4",
+          "status": 206,
+          "type": "media",
+          "ms": 0.0
+        }
+      ],
+      "console": []
+    }
+  ]
+}

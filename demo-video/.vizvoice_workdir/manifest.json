@@ -1,0 +1,342 @@
+{
+  "webm": "/Users/mdevulapalli/Desktop/vizvoice-deck/demo-video/.vizvoice_workdir/video/page@38224a98819af39ecfd658b7fbfeb11b.webm",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "engine": "say",
+  "voice": null,
+  "rate": null,
+  "theme": "dark",
+  "target_duration_s": 0,
+  "wow": "",
+  "trim_lead": 7.431325791999999,
+  "schedule": [
+    {
+      "start": 2.775000000099226e-05,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/55011565db740a6d.wav"
+    },
+    {
+      "start": 7.6701596669999965,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/3f7bc2d706ae3e8c.wav"
+    },
+    {
+      "start": 15.654840416999999,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/2886434e2baaebe7.wav"
+    },
+    {
+      "start": 24.713051667,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/ae1516428954d07a.wav"
+    },
+    {
+      "start": 34.250113625,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/2a4cfca15f2d436a.wav"
+    },
+    {
+      "start": 41.98472991700001,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/5e9f2d39edd03e63.wav"
+    },
+    {
+      "start": 47.441172458,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/9ce36c2763c2e4ea.wav"
+    },
+    {
+      "start": 57.123329833,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/ec914ed2ff9617e3.wav"
+    },
+    {
+      "start": 73.492090958,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/af43102362f98b32.wav"
+    },
+    {
+      "start": 89.656725917,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/be089e294b1aa936.wav"
+    },
+    {
+      "start": 105.96935966699999,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/55322f4467781d2f.wav"
+    },
+    {
+      "start": 116.94984016699999,
+      "wav": "/Users/mdevulapalli/.cache/demo-recorder/tts/60db034a2b65037d.wav"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Open the deck",
+      "narration": "Two hundred and fifty-three million people live with vision loss \u2014 and every dashboard we build our decisions from is invisible to them.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 7.2587,
+      "start_offset": 2.750000000162345e-06,
+      "actions": [
+        "navigate: https://mdevsales.github.io/vizvoice-deck/",
+        "wait: 3"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/",
+          "status": 200,
+          "type": "document",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/salesforce_horiz_white.svg",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/abilityforce.svg",
+          "status": 200,
+          "type": "image",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/semantic-model.mp4",
+          "status": 206,
+          "type": "media",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant:ital,wght@1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap",
+          "status": 200,
+          "type": "stylesheet",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        },
+        {
+          "method": "GET",
+          "url": "https://fonts.gstatic.com/s/cormorant/v24/H4cjBXOCl9bbnla_nHIq6qu_oqOcaThr.woff2",
+          "status": 200,
+          "type": "font",
+          "ms": 0.0
+        }
+      ],
+      "console": []
+    },
+    {
+      "title": "The chart was never the point",
+      "narration": "The chart was never the point. The insight was. VizVoice starts from that idea and rebuilds analytics around it.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 7.568,
+      "start_offset": 7.670082875000002,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 2"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "The scene",
+      "narration": "Traditional Tableau dashboards render as unlabeled SVG. To a screen reader, they are silent \u2014 a wall of shapes with no data behind them.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 8.6454,
+      "start_offset": 15.654780667,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 3"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "253 million",
+      "narration": "Two hundred and fifty-three million people with vision impairment have zero independent access to these insights. That is the size of the gap we are closing.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 9.1254,
+      "start_offset": 24.712965207999996,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 3"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "The critique",
+      "narration": "Every accessibility fix in the industry today assumes the goal is reading the chart. We think that assumption is the bug.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 7.3227,
+      "start_offset": 34.249988167,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 3"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "The reframe",
+      "narration": "What if you did not need to see the chart at all? What if the dashboard just answered you?",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 5.04,
+      "start_offset": 41.98467425,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 3"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "The solution",
+      "narration": "Ask the dashboard out loud. Hear the answer back. That is VizVoice \u2014 a voice-first agent built on Data 360 and Agentforce.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 9.2693,
+      "start_offset": 47.4410805,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 4"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "The semantic model",
+      "narration": "The agent reasons over the same Data 360 semantic model that renders every chart in the org. No RAG, no custom index, no drift between what a sighted user sees and what a blind user hears \u2014 one definition, honored by both.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 15.9627,
+      "start_offset": 57.123279583,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 6"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "url": "https://mdevsales.github.io/vizvoice-deck/assets/semantic-model.mp4",
+          "status": 206,
+          "type": "media",
+          "ms": 0.0
+        }
+      ],
+      "console": []
+    },
+    {
+      "title": "The live demo",
+      "narration": "Here is a real exchange with the agent. You ask which line had the most cancellations. Route twelve, two hundred and fifty canceled trips. You ask about the Green Line in December. Thirty-seven. Every answer grounded in the live semantic model.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 15.7547,
+      "start_offset": 73.492035625,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 5"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "Three layers of work",
+      "narration": "We did not just make VizVoice compliant. We trained the analytics agent with strict accessibility rules in its system prompt. We ran the accessibility expert skill against every component. And we redesigned the entire interaction around voice.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 15.8933,
+      "start_offset": 89.65655562500001,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 4"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "A better default",
+      "narration": "Accessibility is not a fallback. It is a better default. Voice removes barriers, and it speeds insight for every user in the org \u2014 not only the ones we built it for.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 10.5654,
+      "start_offset": 105.96922624999999,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 3"
+      ],
+      "requests": [],
+      "console": []
+    },
+    {
+      "title": "Waiting to scale",
+      "narration": "Built entirely on the Salesforce platform. No external AI services. VizVoice proves voice-first design can make analytics universally accessible \u2014 a solved problem waiting to scale. By Leandria Streeter, Mahathi Devulapalli, and Russell Evans.",
+      "scene": "browser",
+      "layout": "",
+      "surface": "",
+      "ftest_source": "",
+      "source_hash": "77e32be05fd8b69c",
+      "duration": 17.488,
+      "start_offset": 116.949797958,
+      "actions": [
+        "press: ArrowRight",
+        "wait: 4"
+      ],
+      "requests": [],
+      "console": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:07,781
+What if your analyst can't see your dashboard? Meet VizVoice — a voice-first analytics agent for blind and low-vision users.
+
+2
+00:00:08,102 --> 00:00:15,499
+Traditional Tableau dashboards render as unlabeled SVG graphics, making them completely invisible to screen readers.
+
+3
+00:00:15,810 --> 00:00:22,125
+Two hundred and fifty-three million people worldwide with vision impairment have zero access to these insights.
+
+4
+00:00:22,443 --> 00:00:35,515
+Data visualizations fail multiple accessibility standards. Blind and low-vision users cannot consume chart data, navigate dashboards independently, or understand trends without sighted assistance.
+
+5
+00:00:35,834 --> 00:00:40,554
+What if reading the chart was never the goal? What if the dashboard just answered you?
+
+6
+00:00:40,875 --> 00:00:55,942
+VizVoice is a voice agent powered by Agentforce. Users ask questions about Tableau dashboards out loud, and receive spoken answers grounded in the same semantic model that renders every chart in the org. No chart reading required.
+
+7
+00:00:56,262 --> 00:01:13,457
+No screenshot parsing. No vision model. The agent queries the underlying Tableau semantic model directly via the Tableau REST API — so the data a blind user hears is the same authoritative source a sighted user sees. Let me show you VizVoice in action.
