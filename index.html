@@ -601,6 +601,23 @@
             gap: 40px;
             max-width: 1500px;
         }
+        .demo-video-frame {
+            width: 100%;
+            max-width: 1600px;
+            margin: 0 auto;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: var(--sf-electric-15);
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(0, 179, 255, 0.18);
+        }
+        .demo-video-frame video {
+            width: 100%;
+            height: 760px;
+            display: block;
+            object-fit: contain;
+            background: var(--sf-electric-15);
+        }
         .exchange { display: flex; flex-direction: column; gap: 14px; }
         .who {
             font-family: var(--font-mono);
@@ -1159,7 +1176,7 @@
 
                             <!-- forward flow: 03 → 04 → 05 -->
                             <path d="M 1115 305 L 1245 305" stroke="#00B3FF" stroke-width="3" fill="none" marker-end="url(#a-blue)"/>
-                            <path d="M 1495 305 L 1610 305" stroke="#00B3FF" stroke-width="3" fill="none" marker-end="url(#a-blue)"/>
+                            <path d="M 1495 305 L 1560 305" stroke="#00B3FF" stroke-width="3" fill="none" marker-end="url(#a-blue)"/>
 
                             <!-- Conversation loop -->
                             <path d="M 1650 355 C 1650 460 1000 480 200 460 C 130 455 130 400 130 380 L 130 355" stroke="#5b7ba8" stroke-width="2" stroke-dasharray="6 8" fill="none" opacity="0.6" marker-end="url(#a-muted)"/>
@@ -1216,9 +1233,9 @@
 
                             <!-- STEP 5 — User hears -->
                             <g class="arch-step">
-                                <rect class="box-fill" x="1610" y="260" width="105" height="90"/>
-                                <text class="step-num-text" x="1632" y="292">05</text>
-                                <text class="step-label" x="1632" y="322" style="font-size: 18px;">User hears</text>
+                                <rect class="box-fill" x="1560" y="260" width="150" height="90"/>
+                                <text class="step-num-text" x="1582" y="292">05</text>
+                                <text class="step-label" x="1582" y="322" style="font-size: 20px;">User hears</text>
                             </g>
                         </svg>
                     </div>
@@ -1235,7 +1252,7 @@
                 <div class="slide-inner">
                     <div class="semantic-lead reveal">Grounded, not guessed</div>
                     <h2 class="semantic-title reveal">The agent reasons over the <em>same semantic model</em> as every chart in the org.</h2>
-                    <p class="semantic-sub reveal">No RAG. No custom index. No drift between what a sighted user sees and what a blind user hears — one Data 360 semantic model, queried by Agentforce and honored by both.</p>
+                    <p class="semantic-sub reveal">No screenshot parsing. No vision model. The agent queries the underlying Tableau semantic model directly via the Tableau REST API — so the data a blind user hears is the same authoritative source a sighted user sees.</p>
                     <div class="semantic-graph reveal">
                         <video src="assets/semantic-model.mp4"
                                autoplay muted loop playsinline preload="auto"
@@ -1324,35 +1341,11 @@
                         <div class="live-dot"></div>
                         <div class="eyebrow">Live · Chicago Transit Data</div>
                     </div>
-                    <div class="conversation">
-                        <div class="exchange reveal">
-                            <div class="user-line">
-                                <span class="who">You</span>
-                                <span class="said">"What line had the most cancellations?"</span>
-                            </div>
-                        </div>
-                        <div class="exchange reveal">
-                            <div class="agent-line">
-                                <span class="who">VizVoice</span>
-                                <span class="said">Route 12 had the most cancellations, with <em>250 canceled trips.</em>
-                                    <span class="follow-up">Would you like to know which line had the second most?</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="exchange reveal">
-                            <div class="user-line">
-                                <span class="who">You</span>
-                                <span class="said">"How many on the Green Line in December?"</span>
-                            </div>
-                        </div>
-                        <div class="exchange reveal">
-                            <div class="agent-line">
-                                <span class="who">VizVoice</span>
-                                <span class="said"><em>Thirty-seven</em> canceled trips on the Green Line in December.
-                                    <span class="follow-up">Want to compare that to other months, or other lines?</span>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="demo-video-frame reveal">
+                        <video src="assets/vizvoice-demo.mp4"
+                               autoplay muted loop playsinline preload="auto"
+                               aria-label="VizVoice app demo: user asks the dashboard a question and hears a spoken answer grounded in the semantic model">
+                        </video>
                     </div>
                 </div>
             </section>
