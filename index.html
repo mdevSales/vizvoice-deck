@@ -516,9 +516,18 @@
             background: var(--surface-elev);
             border: 1px solid var(--line-soft);
             border-radius: var(--radius-lg);
-            padding: 40px;
+            padding: 16px;
+            overflow: hidden;
         }
         .semantic-graph svg { width: 100%; height: 480px; display: block; }
+        .semantic-graph video {
+            width: 100%;
+            height: 480px;
+            display: block;
+            border-radius: calc(var(--radius-lg) - 8px);
+            object-fit: cover;
+            background: #000516;
+        }
         .dmo-node circle { fill: var(--sf-cloud-68); }
         .dmo-node.dim circle { fill: rgba(0, 179, 255, 0.35); }
         .dmo-node text {
@@ -1147,7 +1156,11 @@
                     <h2 class="semantic-title reveal">The agent reasons over the <em>same semantic model</em> as every chart in the org.</h2>
                     <p class="semantic-sub reveal">No RAG. No custom index. No drift between what a sighted user sees and what a blind user hears — one Data Cloud definition, honored by both.</p>
                     <div class="semantic-graph reveal">
-                        <svg viewBox="0 0 1600 480" xmlns="http://www.w3.org/2000/svg" aria-label="Data Cloud semantic model showing Account as the hub connected to Case, Opportunity, User, Contact, Individual, and Activity DMOs">
+                        <video src="assets/semantic-model.mp4"
+                               autoplay muted loop playsinline preload="auto"
+                               aria-label="Data Cloud semantic model animation: Account as the hub connecting Case, Opportunity, Contact, Individual, Activity, and User DMOs">
+                        </video>
+                        <svg viewBox="0 0 1600 480" xmlns="http://www.w3.org/2000/svg" style="display:none" aria-label="Data Cloud semantic model showing Account as the hub connected to Case, Opportunity, User, Contact, Individual, and Activity DMOs">
                             <!-- edges -->
                             <path class="dmo-edge" d="M 800 240 L 480 240"/>
                             <path class="dmo-edge" d="M 800 240 L 1120 240"/>
@@ -1446,8 +1459,17 @@
             showSlide(index) {
                 this.currentSlide = Math.max(0, Math.min(index, this.total - 1));
                 this.slides.forEach((slide, i) => {
-                    slide.classList.toggle('active', i === this.currentSlide);
-                    slide.classList.toggle('visible', i === this.currentSlide);
+                    const isActive = i === this.currentSlide;
+                    slide.classList.toggle('active', isActive);
+                    slide.classList.toggle('visible', isActive);
+                    slide.querySelectorAll('video').forEach((v) => {
+                        if (isActive) {
+                            v.currentTime = 0;
+                            const p = v.play(); if (p && p.catch) p.catch(() => {});
+                        } else {
+                            v.pause();
+                        }
+                    });
                 });
                 this.curSlideEl.textContent = String(this.currentSlide + 1).padStart(2, '0');
                 this.progressBar.style.transform = `scaleX(${(this.currentSlide + 1) / this.total})`;
