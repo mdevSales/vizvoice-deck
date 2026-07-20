@@ -825,7 +825,19 @@
             padding-top: 40px;
             border-top: 1px solid var(--line-soft);
         }
-        .team { display: flex; flex-direction: column; gap: 6px; }
+        .team { display: flex; flex-direction: column; gap: 20px; }
+        .team-people { display: flex; gap: 44px; align-items: flex-end; }
+        .team-person { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+        .team-avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--sf-cloud-68);
+            box-shadow: 0 12px 40px rgba(0, 15, 61, 0.45);
+            background: var(--sf-electric-15);
+        }
+        .team-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .team-label {
             font-family: var(--font-mono);
             font-size: 12px;
@@ -1440,9 +1452,20 @@
                     <div class="close-footer reveal">
                         <div class="team">
                             <span class="team-label">Team</span>
-                            <span class="team-names">Leandria Streeter</span>
-                            <span class="team-names">Mahathi Devulapalli</span>
-                            <span class="team-names">Russell Evans</span>
+                            <div class="team-people">
+                                <div class="team-person">
+                                    <div class="team-avatar"><img src="assets/team/leandria.png" alt="Leandria Streeter"></div>
+                                    <span class="team-names">Leandria Streeter</span>
+                                </div>
+                                <div class="team-person">
+                                    <div class="team-avatar"><img src="assets/team/mahathi.png" alt="Mahathi Devulapalli"></div>
+                                    <span class="team-names">Mahathi Devulapalli</span>
+                                </div>
+                                <div class="team-person">
+                                    <div class="team-avatar"><img src="assets/team/russell.png" alt="Russell Evans"></div>
+                                    <span class="team-names">Russell Evans</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="close-org">
                             <span class="sf-logo" aria-label="Salesforce">
